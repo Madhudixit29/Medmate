@@ -34,11 +34,11 @@ app.post('/api/data', async (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile('index.html');
 });
 
 app.get('/display', (req, res) => {
-  res.sendFile(path.join(__dirname, 'display.html'));
+  res.sendFile('display.html');
 });
 
 http.listen(3000, function() {
