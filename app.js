@@ -17,7 +17,6 @@ mongoose.connect(mongoURI, {
 
 
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/api/data', async (req, res) => {
   const collectionName = req.body.value;
